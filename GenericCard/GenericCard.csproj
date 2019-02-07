@@ -44,10 +44,12 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\basegame\cardsystem\AbstractAction.cs" />
     <Compile Include="src\basegame\cardsystem\AbstractCard.cs" />
     <Compile Include="src\basegame\cardsystem\AbstractDeck.cs" />
     <Compile Include="src\basegame\cardutilities\CardIDUtilities.cs" />
     <Compile Include="src\basegame\cardutilities\DeckTagUtil.cs" />
+    <Compile Include="src\basegame\charactersystem\AbstractPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

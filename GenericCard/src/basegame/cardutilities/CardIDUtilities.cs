@@ -21,7 +21,7 @@ namespace GenericCard.src.basegame.cardutilities
             return "";
         }
 
-        protected static bool IsValidCardID(AbstractCard input_Card)
+        public static bool IsValidCardID(AbstractCard input_Card)
         {
             return (input_Card.GetID() != null && input_Card.GetID() != "" && input_Card.GetID().Contains(":"));
         }
