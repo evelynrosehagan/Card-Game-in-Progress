@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using GeonBit.UI;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -7,6 +8,8 @@ namespace GenericCard
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
+    /// 
+    
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
@@ -14,6 +17,7 @@ namespace GenericCard
 
         public Game1()
         {
+            IsMouseVisible = true;
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
@@ -27,6 +31,7 @@ namespace GenericCard
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            UserInterface.Initialize(Content, BuiltinThemes.hd);
 
             base.Initialize();
         }
@@ -59,6 +64,7 @@ namespace GenericCard
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            UserInterface.Active.Update(gameTime);
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
@@ -74,7 +80,7 @@ namespace GenericCard
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            UserInterface.Active.Draw(spriteBatch);
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);

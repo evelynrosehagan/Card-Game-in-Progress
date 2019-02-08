@@ -21,3 +21,5 @@ C:\Users\connor\source\repos\GenericCard\GenericCard\obj\x86\Debug\GenericCard.c
 C:\Users\connor\source\repos\GenericCard\GenericCard\obj\x86\Debug\GenericCard.csproj.CopyComplete
 C:\Users\connor\source\repos\GenericCard\GenericCard\obj\x86\Debug\GenericCard.exe
 C:\Users\connor\source\repos\GenericCard\GenericCard\obj\x86\Debug\GenericCard.pdb
+C:\Users\connor\source\repos\GenericCard\GenericCard\bin\Windows\x86\Debug\DataTypes.dll
+C:\Users\connor\source\repos\GenericCard\GenericCard\bin\Windows\x86\Debug\GeonBit.UI.dll

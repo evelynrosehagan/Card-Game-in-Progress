@@ -1,0 +1,11 @@
+<Project>
+  <ExportOptions />
+  <Panel Id="_panelRoot">
+    <TextBlock Text="Card Game Debug" Id="_title" HorizontalAlignment="Center" />
+    <VerticalMenu HorizontalAlignment="Center" VerticalAlignment="Center" Id="_main_menu">
+      <MenuItem Id="_openDemoScene1" Text="Open Demo Scene 1" />
+      <MenuItem Id="_openDemoScene2" Text="Open Demo Scene 2" />
+      <MenuItem Id="_openDemoScene3" Text="Open Demo Scene 3" />
+    </VerticalMenu>
+  </Panel>
+</Project>
