@@ -33,3 +33,4 @@ namespace GenericCard.src.basedata.basecards
         }
     }
 }
+ 
