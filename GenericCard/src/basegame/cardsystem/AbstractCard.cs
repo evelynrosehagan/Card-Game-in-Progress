@@ -17,6 +17,9 @@ namespace GenericCard.src.basegame.cardsystem
         private readonly CardTarget card_target;
         private readonly int card_cost;
         private readonly string card_description;
+
+        //optional fields
+        protected int damage;
         #endregion
 
         #region Enums and structures
@@ -65,6 +68,15 @@ namespace GenericCard.src.basegame.cardsystem
         {
             return ID;
         }
+
+        public CardType GetCardType()
+        {
+            return card_type;
+        }
+        public CardTarget GetCardTarget()
+        {
+            return card_target;
+        }
         #endregion
 
         #region Image Functions
@@ -72,7 +84,7 @@ namespace GenericCard.src.basegame.cardsystem
         #endregion
 
         #region Useage Functions
-        public abstract void use(AbstractPlayer PlayerCharacter, AbstractPlayer EnemyCharacter);
+        public abstract void use(AbstractPlayer Self, AbstractPlayer Enemy, AbstractEnvironment Environment);
         #endregion
 
     }

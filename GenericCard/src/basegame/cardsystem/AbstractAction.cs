@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericCard.src.basegame.cardsystem
 {
-    abstract class AbstractAction
+    public abstract class AbstractAction
     {
         protected bool isdone;
 
