@@ -15,5 +15,16 @@ namespace GenericCard.src.basegame.cardsystem
         {
             return CardPool;
         }
+
+        public AbstractCard draw()
+        {
+            throw new NotImplementedException();
+        }
+
+        public AbstractCard[] GetArrayOfCardsInDeck()
+        {
+            return CardQueue.ToArray();
+        }
+
     }
 }

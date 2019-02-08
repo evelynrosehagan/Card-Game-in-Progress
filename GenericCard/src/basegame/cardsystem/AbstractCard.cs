@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using GenericCard.src.basegame.charactersystem;
 namespace GenericCard.src.basegame.cardsystem
 {
     public abstract class AbstractCard
@@ -65,6 +65,14 @@ namespace GenericCard.src.basegame.cardsystem
         {
             return ID;
         }
+        #endregion
+
+        #region Image Functions
+
+        #endregion
+
+        #region Useage Functions
+        public abstract void use(AbstractPlayer PlayerCharacter, AbstractPlayer EnemyCharacter);
         #endregion
 
     }

@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GenericCard.src.basegame.cardsystem;
-namespace GenericCard.src.basegame.charactersystem
+namespace GenericCard.src.basegame.battlesystem
 {
-    public abstract class AbstractPlayer
+    public class ActionManager
     {
-        AbstractDeck player_deck;
-        
+        Queue<AbstractAction> actionList;
     }
 }
