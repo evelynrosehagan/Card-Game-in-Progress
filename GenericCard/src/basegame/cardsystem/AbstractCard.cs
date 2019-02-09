@@ -20,6 +20,8 @@ namespace GenericCard.src.basegame.cardsystem
 
         //optional fields
         protected int damage;
+
+        protected string card_tags;
         #endregion
 
         #region Enums and structures
@@ -59,6 +61,7 @@ namespace GenericCard.src.basegame.cardsystem
             card_type = ctype;
             card_cost = ccost;
             card_description = cdescription;
+            card_tags = "";
 
             if (cardutilities.CardIDUtilities.IsValidCardID(this))
                 card_name = ID.Split(':')[1];

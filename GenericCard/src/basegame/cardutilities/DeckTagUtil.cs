@@ -12,14 +12,7 @@ namespace GenericCard.src.basegame.cardutilities
     {
         public static bool CardInCardPool(AbstractCard input_card, AbstractDeck input_deck)
         {
-            string[] DeckFactions = GetListDeckFactions(input_deck);
-            string card_faction = CardIDUtilities.GetCardFaction(input_card);
-            foreach (string comparitor_faction in DeckFactions)
-            {
-                if (comparitor_faction == card_faction)
-                    return true;
-            }
-            return false;
+            return IsFactionInPool( input_deck, CardIDUtilities.GetCardFaction(input_card));
         }
 
         public static string[] GetListDeckFactions(AbstractDeck input_deck)
@@ -38,7 +31,20 @@ namespace GenericCard.src.basegame.cardutilities
                 return CardPool.Split(':');
             }
         }
-
+		
+		public static bool IsFactionInPool(AbstractDeck input_deck, string faction)
+		{
+			if(!IsValidCardPool(input_deck)
+				return false;
+			string[] faction_list = GetListDeckFactions(input_deck);
+			foreach(string comparitor_faction in faction_list)
+			{
+				if(faction == faction_itr)
+					return true;
+			}
+			return false;
+		}
+		
         public static bool IsValidCardPool(AbstractDeck input_deck)
         {
             string CardPool = input_deck.GetCardPool();
