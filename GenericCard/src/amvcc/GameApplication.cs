@@ -22,7 +22,14 @@ namespace GenericCard.src.amvcc
 
         GameApplication()
         {
+            model = new GameModel();
+            view = new GameView();
+            controller = new GameController();
+        }
 
+        public void Notify(string event_path, Object event_target, params object[] event_data)
+        {
+            controller.Notify(event_path, event_target, event_data);
         }
     }
 }
