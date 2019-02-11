@@ -27,6 +27,9 @@ namespace GenericCard.src.amvcc.controller
                 case "debug.menu1":
                     new_scene = new menu_DebugMenu1();
                     break;
+                case "debug.combat1":
+                    new_scene = new debug_CombatTester();
+                    break;
                 default:
                     Console.WriteLine("ERROR >> Cannot load scene with name of " + scene_name);
                     break;

@@ -24,6 +24,7 @@ namespace GenericCard.UI
             btn_scene_1.OnClick = (Entity btn) =>
             {
                 Console.WriteLine("Opening Demo Scene 1");
+                app.Notify(src.notifications.UINotifications.LoadNewScene, this, "debug.combat1");
             };
             panel.AddChild(btn_scene_1);
 
