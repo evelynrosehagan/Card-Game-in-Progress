@@ -34,12 +34,12 @@ namespace GenericCard.src.basegame.cardutilities
 		
 		public static bool IsFactionInPool(AbstractDeck input_deck, string faction)
 		{
-			if(!IsValidCardPool(input_deck)
+			if(!IsValidCardPool(input_deck))
 				return false;
 			string[] faction_list = GetListDeckFactions(input_deck);
 			foreach(string comparitor_faction in faction_list)
 			{
-				if(faction == faction_itr)
+				if(faction == comparitor_faction)
 					return true;
 			}
 			return false;

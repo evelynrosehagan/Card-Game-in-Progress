@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using GenericCard.UI;
 namespace GenericCard
 {
     /// <summary>
@@ -15,11 +15,18 @@ namespace GenericCard
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        menu_DebugMenu1 debug_menu;
+
         public Game1()
         {
-            IsMouseVisible = true;
+            //IsMouseVisible = true;
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferHeight = 720;
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.ApplyChanges();
             Content.RootDirectory = "Content";
+
+            debug_menu = new menu_DebugMenu1();
         }
 
         /// <summary>
@@ -32,7 +39,7 @@ namespace GenericCard
         {
             // TODO: Add your initialization logic here
             UserInterface.Initialize(Content, BuiltinThemes.hd);
-
+            
             base.Initialize();
         }
 
@@ -67,9 +74,8 @@ namespace GenericCard
             UserInterface.Active.Update(gameTime);
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
+            debug_menu.Draw();
             // TODO: Add your update logic here
-
             base.Update(gameTime);
         }
 

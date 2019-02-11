@@ -63,6 +63,7 @@
     <Compile Include="src\basegame\charactersystem\AbstractMonster.cs" />
     <Compile Include="src\basegame\charactersystem\AbstractPlayer.cs" />
     <Compile Include="src\basegame\charactersystem\AbstractPlayerCharacter.cs" />
+    <Compile Include="UI\menu_DebugMenu1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DataTypes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -675,7 +676,6 @@
     <Folder Include="src\factiondata\necromancer\" />
     <Folder Include="src\factiondata\warrior\actions\" />
     <Folder Include="src\factiondata\warrior\cards\" />
-    <Folder Include="UI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
