@@ -50,6 +50,8 @@
     <Compile Include="src\amvcc\GameEntity.cs" />
     <Compile Include="src\amvcc\GameModel.cs" />
     <Compile Include="src\amvcc\GameView.cs" />
+    <Compile Include="src\amvcc\model\CombatModel.cs" />
+    <Compile Include="src\amvcc\model\OverworldModel.cs" />
     <Compile Include="src\basedata\baseactions\DamageAction.cs" />
     <Compile Include="src\basedata\basecards\Punch.cs" />
     <Compile Include="src\basegame\battlesystem\AbstractArena.cs" />
