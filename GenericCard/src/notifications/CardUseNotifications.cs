@@ -8,9 +8,9 @@ namespace GenericCard.src.notifications
 {
     public static class CardUseNotifications
     {
-        public static readonly string CardDraw = "card.draw";
-        public static readonly string CardDiscardChoice = "card.discard.choice";
-        public static readonly string CardDiscardRandom = "card.discard.random";
+        public const string DeckCardDraw = "deck.card.draw";
+        public const string HandDiscardChoice = "hand.discard.choice";
+        public const string HandDiscardRandom = "hand.discard.random";
 
     }
 }

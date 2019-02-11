@@ -44,6 +44,12 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\amvcc\controller\SceneController.cs" />
+    <Compile Include="src\amvcc\GameApplication.cs" />
+    <Compile Include="src\amvcc\GameController.cs" />
+    <Compile Include="src\amvcc\GameEntity.cs" />
+    <Compile Include="src\amvcc\GameModel.cs" />
+    <Compile Include="src\amvcc\GameView.cs" />
     <Compile Include="src\basedata\baseactions\DamageAction.cs" />
     <Compile Include="src\basedata\basecards\Punch.cs" />
     <Compile Include="src\basegame\battlesystem\AbstractArena.cs" />
@@ -63,7 +69,12 @@
     <Compile Include="src\basegame\charactersystem\AbstractMonster.cs" />
     <Compile Include="src\basegame\charactersystem\AbstractPlayer.cs" />
     <Compile Include="src\basegame\charactersystem\AbstractPlayerCharacter.cs" />
+    <Compile Include="src\notifications\CardUseNotifications.cs" />
+    <Compile Include="src\notifications\GameStateNotifications.cs" />
+    <Compile Include="src\notifications\UINotifications.cs" />
+    <Compile Include="UI\debug_CombatTester.cs" />
     <Compile Include="UI\menu_DebugMenu1.cs" />
+    <Compile Include="UI\UIScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DataTypes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

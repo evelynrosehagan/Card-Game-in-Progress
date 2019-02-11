@@ -9,11 +9,10 @@ using Microsoft.Xna.Framework;
 
 namespace GenericCard.UI
 {
-    class menu_DebugMenu1
+    class menu_DebugMenu1 : UIScene
     {
-        public bool has_drawn = false;
         bool serialized = false;
-        public void Draw()
+        public override void Draw()
         {
             if (has_drawn)
                 return;

@@ -8,9 +8,9 @@ namespace GenericCard.src.notifications
 {
     public static class GameStateNotifications
     {
-        public static readonly string PlayerDeath = "player.death";
-        public static readonly string GameClose = "game.close";
-        public static readonly string GamePause = "game.pause";
-        public static readonly string GameUnpause = "game.unpause";
+        public const string PlayerDeath = "player.death";
+        public const string GameClose = "game.close";
+        public const string GamePause = "game.pause";
+        public const string GameUnpause = "game.unpause";
     }
 }
