@@ -63,6 +63,7 @@
     <Compile Include="src\basegame\cardsystem\action\AbstractMagicAction.cs" />
     <Compile Include="src\basegame\cardsystem\action\AbstractSkillAction.cs" />
     <Compile Include="src\basegame\cardsystem\action\AbstractUpgradeAction.cs" />
+    <Compile Include="src\basegame\cardsystem\DEBUG_Card.cs" />
     <Compile Include="src\basegame\cardutilities\CardIDUtilities.cs" />
     <Compile Include="src\basegame\cardutilities\CardTargettingUtility.cs" />
     <Compile Include="src\basegame\cardutilities\DeckSearchUtility.cs" />
@@ -71,6 +72,9 @@
     <Compile Include="src\basegame\charactersystem\AbstractMonster.cs" />
     <Compile Include="src\basegame\charactersystem\AbstractPlayer.cs" />
     <Compile Include="src\basegame\charactersystem\AbstractPlayerCharacter.cs" />
+    <Compile Include="src\basegame\charactersystem\DEBUG\DEBUG_Environment.cs" />
+    <Compile Include="src\basegame\charactersystem\DEBUG\DEBUG_Monster.cs" />
+    <Compile Include="src\basegame\charactersystem\DEBUG\DEBUG_PC.cs" />
     <Compile Include="src\notifications\CardUseNotifications.cs" />
     <Compile Include="src\notifications\GameStateNotifications.cs" />
     <Compile Include="src\notifications\UINotifications.cs" />

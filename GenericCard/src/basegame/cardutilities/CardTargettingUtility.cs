@@ -8,7 +8,7 @@ using GenericCard.src.basegame.cardsystem;
 
 namespace GenericCard.src.basegame.cardutilities
 {
-    class CardTargettingUtility
+    public class CardTargettingUtility
     {
         public static List<AbstractPlayer> GetPCTargets(AbstractCard Card, AbstractPlayer Self, AbstractPlayer Enemy, AbstractEnvironment Environment)
         {

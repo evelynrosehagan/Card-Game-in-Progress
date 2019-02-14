@@ -12,7 +12,7 @@ using GenericCard.src.basedata.baseactions;
 
 namespace GenericCard.src.basedata.basecards
 {
-    class Punch : AbstractCard
+    public class Punch : AbstractCard
     {
         public readonly static string CARD_ID = "Basic:Punch";
         private readonly static CardRarity RARITY = CardRarity.Common;
