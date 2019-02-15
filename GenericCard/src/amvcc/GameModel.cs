@@ -12,14 +12,24 @@ namespace GenericCard.src.amvcc
     {
         public AbstractPlayerCharacter player_character;
 
-        CombatModel combat_model;
-        OverworldModel overworld_model;
-
-        public enum CurrentModelState
+        public CombatModel combat_model;
+        public OverworldModel overworld_model;
+        ModelState current_model_state;
+        public enum ModelState
         {
             Overworld,
             Combat,
             Shop
         }
+        public void SetModelState(ModelState input_state)
+        {
+            current_model_state = input_state;
+        }
+        public void InitializeCombat(AbstractPlayerCharacter PC, AbstractMonster Monster, AbstractEnvironment Environment)
+        {
+            SetModelState(ModelState.Combat);
+            combat_model = new CombatModel(PC, Monster, Environment);
+        }
+
     }
 }

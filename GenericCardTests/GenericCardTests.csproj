@@ -52,6 +52,7 @@
     <Compile Include="src\basegame\cardutilities\CardIDUtilitiesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\basegame\cardutilities\CardTargettingUtilityTests.cs" />
+    <Compile Include="src\basegame\cardutilities\DeckSearchUtilityTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -23,6 +23,7 @@ namespace GenericCard.src.basedata.baseactions
             {
                 player.Damage(damage);
             }
+            isdone = true;
         }
 
     }

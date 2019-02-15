@@ -39,8 +39,10 @@ namespace GenericCard.src.basegame.cardutilities.Tests.CardUtilities
             AbstractPlayer Environment = new DEBUG_Environment();
             AbstractCard tmp_card = new DEBUG_Card("TEST", AbstractCard.CardRarity.Common, AbstractCard.CardType.Attack, AbstractCard.CardTarget.Self, 1, "TEST");
 
-            List<AbstractPlayer> expected_list = new List<AbstractPlayer>();
-            expected_list.Add(PC);
+            List<AbstractPlayer> expected_list = new List<AbstractPlayer>
+            {
+                PC
+            };
 
             bool expected_equal = true;
             //act
@@ -68,10 +70,12 @@ namespace GenericCard.src.basegame.cardutilities.Tests.CardUtilities
             AbstractPlayer Environment = new DEBUG_Environment();
             AbstractCard tmp_card = new DEBUG_Card("TEST", AbstractCard.CardRarity.Common, AbstractCard.CardType.Attack, AbstractCard.CardTarget.All, 1, "TEST");
 
-            List<AbstractPlayer> expected_list = new List<AbstractPlayer>();
-            expected_list.Add(PC);
-            expected_list.Add(Monster);
-            expected_list.Add(Environment);
+            List<AbstractPlayer> expected_list = new List<AbstractPlayer>
+            {
+                PC,
+                Monster,
+                Environment
+            };
             bool expected_equal = true;
             //act
             List<AbstractPlayer> result_list = CardTargettingUtility.GetPCTargets(tmp_card, PC, Monster, (AbstractEnvironment)Environment);
@@ -98,8 +102,10 @@ namespace GenericCard.src.basegame.cardutilities.Tests.CardUtilities
             AbstractPlayer Environment = new DEBUG_Environment();
             AbstractCard tmp_card = new DEBUG_Card("TEST", AbstractCard.CardRarity.Common, AbstractCard.CardType.Attack, AbstractCard.CardTarget.Environment, 1, "TEST");
 
-            List<AbstractPlayer> expected_list = new List<AbstractPlayer>();
-            expected_list.Add(Environment);
+            List<AbstractPlayer> expected_list = new List<AbstractPlayer>
+            {
+                Environment
+            };
             bool expected_equal = true;
             //act
             List<AbstractPlayer> result_list = CardTargettingUtility.GetPCTargets(tmp_card, PC, Monster, (AbstractEnvironment)Environment);
@@ -126,8 +132,10 @@ namespace GenericCard.src.basegame.cardutilities.Tests.CardUtilities
             AbstractPlayer Environment = new DEBUG_Environment();
             AbstractCard tmp_card = new DEBUG_Card("TEST", AbstractCard.CardRarity.Common, AbstractCard.CardType.Attack, AbstractCard.CardTarget.Enemy, 1, "TEST");
 
-            List<AbstractPlayer> expected_list = new List<AbstractPlayer>();
-            expected_list.Add(Monster);
+            List<AbstractPlayer> expected_list = new List<AbstractPlayer>
+            {
+                Monster
+            };
             bool expected_equal = true;
             //act
             List<AbstractPlayer> result_list = CardTargettingUtility.GetPCTargets(tmp_card, PC, Monster, (AbstractEnvironment)Environment);

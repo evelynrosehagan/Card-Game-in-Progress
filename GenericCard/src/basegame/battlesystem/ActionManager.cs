@@ -19,5 +19,18 @@ namespace GenericCard.src.basegame.battlesystem
         {
             actionList.Enqueue(input_action);
         }
+
+        public void Process()
+        {
+            Queue<AbstractAction> actions_incomplete = new Queue<AbstractAction>();
+            while(actionList.Count>0)
+            {
+                AbstractAction action_to_process = actionList.Dequeue();
+                action_to_process.update();
+                if (!action_to_process.IsDone())
+                    actions_incomplete.Enqueue(action_to_process);
+            }
+            actionList = actions_incomplete;
+        }
     }
 }

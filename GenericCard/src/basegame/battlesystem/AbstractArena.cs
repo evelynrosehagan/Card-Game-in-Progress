@@ -8,10 +8,15 @@ namespace GenericCard.src.basegame.battlesystem
 {
     abstract class AbstractArena
     {
-        AbstractPlayerCharacter PlayerCharacter;
-        AbstractMonster Enemy;
-        AbstractEnvironment Environment;
+        public AbstractPlayerCharacter PlayerCharacter;
+        public AbstractMonster Enemy;
+        public AbstractEnvironment Environment;
 
         public static ActionManager actionManager;
+
+        public AbstractArena()
+        {
+            actionManager = new ActionManager();
+        }
     }
 }

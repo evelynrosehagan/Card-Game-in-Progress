@@ -10,9 +10,11 @@ namespace GenericCard.src.amvcc
     class GameController : GameEntity
     {
         SceneController sceneController;
+        CombatController combatController;
         public GameController()
         {
             sceneController = new SceneController();
+            combatController = new CombatController();
         }
         public void Notify(string notification, Object event_target, params object[] event_data)
         {
@@ -21,6 +23,9 @@ namespace GenericCard.src.amvcc
             {
                 case "scene":
                     sceneController.Notify(notification, event_target, event_data);
+                    break;
+                case "combat":
+                    combatController.Notify(notification, event_target, event_data);
                     break;
             }
         }

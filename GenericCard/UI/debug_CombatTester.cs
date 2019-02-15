@@ -29,6 +29,8 @@ namespace GenericCard.UI
             };
             UserInterface.Active.AddEntity(rtn_menu);
             has_drawn = true;
+
+
         }
     }
 }

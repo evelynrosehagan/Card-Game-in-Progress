@@ -9,10 +9,18 @@ namespace GenericCard.src.amvcc.model
 {
     class CombatModel : GameEntity
     {
+        public CombatModel(AbstractPlayerCharacter PC, AbstractMonster monster, AbstractEnvironment environment)
+        {
+            PlayerCharacter = PC;
+            MonsterCharacter = monster;
+            EnvironmentCharacter = environment;
+
+            Arena = new DEBUG_Arena();
+        }
         AbstractPlayerCharacter PlayerCharacter;
         AbstractMonster MonsterCharacter;
         AbstractEnvironment EnvironmentCharacter;
 
-        AbstractArena Arena;
+        public AbstractArena Arena;
     }
 }

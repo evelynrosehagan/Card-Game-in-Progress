@@ -11,6 +11,11 @@ namespace GenericCard.src.basegame.cardsystem
         protected string CardPool = "";
         Queue<AbstractCard> CardQueue;
 
+        public AbstractDeck()
+        {
+            CardQueue = new Queue<AbstractCard>();
+        }
+
         public string GetCardPool()
         {
             return CardPool;
@@ -24,6 +29,11 @@ namespace GenericCard.src.basegame.cardsystem
         public AbstractCard[] GetArrayOfCardsInDeck()
         {
             return CardQueue.ToArray();
+        }
+
+        public void AddCard(AbstractCard new_card)
+        {
+            CardQueue.Enqueue(new_card);
         }
 
     }
