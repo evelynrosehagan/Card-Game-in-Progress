@@ -10,7 +10,7 @@ namespace GenericCard.src.amvcc.controller.combat
 {
     class CombatCardController : GameEntity
     {
-        public void Notify(string notification, Object event_target, params object[] event_data)
+        public override void Notify(string notification, Object event_target, params object[] event_data)
         {
             string[] separated_path = notification.Split('.');
             switch(separated_path[2])

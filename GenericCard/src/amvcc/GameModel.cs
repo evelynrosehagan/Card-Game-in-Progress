@@ -31,5 +31,9 @@ namespace GenericCard.src.amvcc
             combat_model = new CombatModel(PC, Monster, Environment);
         }
 
+        public override void Notify(string notification, object event_target, params object[] event_data)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

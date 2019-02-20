@@ -12,5 +12,9 @@ namespace GenericCard.src.notifications
         public const string GameClose = "system.game.close";
         public const string GamePause = "system.game.pause";
         public const string GameUnpause = "system.game.unpause";
+
+        //Start New States
+        public const string StartCombat = "system.game.combat";
+        public const string StartDebugCombat = "system.game.debugcombat";
     }
 }

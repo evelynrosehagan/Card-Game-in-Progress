@@ -12,6 +12,7 @@ namespace GenericCard.src.amvcc
         {
             get { return GameApplication.GetInstance(); }
         }
+        public virtual void Notify(string notification, Object event_target, params object[] event_data) { }
 
     }
 }

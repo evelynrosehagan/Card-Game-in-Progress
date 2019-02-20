@@ -20,7 +20,7 @@ namespace GenericCard.src.basedata.basecards
         private readonly static CardTarget TARGET = CardTarget.Enemy;
         private readonly static int BASECOST = 1;
         private readonly static string BASEDESCRIPTION = "Deal ##damage## damage";
-        private readonly static int BASEDAMAGE = 5;
+        private readonly static int BASEDAMAGE = 11;
 
         public Punch() :
             base(CARD_ID, RARITY, CARDTYPE, TARGET, BASECOST, BASEDESCRIPTION)

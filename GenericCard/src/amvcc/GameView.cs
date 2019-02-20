@@ -24,5 +24,10 @@ namespace GenericCard.src.amvcc
                 Console.WriteLine("ERROR >> new scene is null");
             }
         }
+
+        public override void Notify(string notification, object event_target, params object[] event_data)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

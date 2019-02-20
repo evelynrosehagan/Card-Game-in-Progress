@@ -8,10 +8,10 @@ namespace GenericCard.src.amvcc.controller.combat
 {
     class CombatViewController : GameEntity
     {
-        public void Notify(string notification, Object event_target, params object[] event_data)
+        public override void Notify(string notification, Object event_target, params object[] event_data)
         {
             string[] separated_path = notification.Split('.');
-            switch(separated_path[1])
+            switch(separated_path[2])
             {
                 case "update":
                     Update();
@@ -21,7 +21,9 @@ namespace GenericCard.src.amvcc.controller.combat
         }
         void Update()
         {
-            app.view.combat_view.UpdateEnemyHealth(app.model.combat_model.)
+            app.view.combat_view.UpdateEnemyHealth(app.model.combat_model.Arena.Enemy.GetHealth());
+            app.view.combat_view.UpdatePlayerHealth(app.model.combat_model.Arena.PlayerCharacter.GetHealth());
+
         }
     }
 }

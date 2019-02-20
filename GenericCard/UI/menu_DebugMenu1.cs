@@ -24,7 +24,7 @@ namespace GenericCard.UI
             btn_scene_1.OnClick = (Entity btn) =>
             {
                 Console.WriteLine("Opening Demo Scene 1");
-                app.Notify(src.notifications.UINotifications.LoadNewScene, this, "debug.combat1");
+                app.Notify(src.notifications.GameStateNotifications.StartDebugCombat, this, null);
             };
             panel.AddChild(btn_scene_1);
 
@@ -57,6 +57,9 @@ namespace GenericCard.UI
             panel.AddChild(btn_scene_5);
             has_drawn = true;
         }
+
+        
+
         public void Serialize()
         {
             if (serialized)

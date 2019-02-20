@@ -9,7 +9,7 @@ namespace GenericCard.src.amvcc.controller
 {
     class SceneController : GameEntity
     {
-        public void Notify(string notification, Object event_target, params object[] event_data)
+        public override void Notify(string notification, Object event_target, params object[] event_data)
         {
             switch(notification)
             {

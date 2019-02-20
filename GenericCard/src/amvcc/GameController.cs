@@ -9,14 +9,16 @@ namespace GenericCard.src.amvcc
 {
     class GameController : GameEntity
     {
+        SystemController systemController;
         SceneController sceneController;
         CombatController combatController;
         public GameController()
         {
             sceneController = new SceneController();
             combatController = new CombatController();
+            systemController = new SystemController();
         }
-        public void Notify(string notification, Object event_target, params object[] event_data)
+        public override void Notify(string notification, Object event_target, params object[] event_data)
         {
             string[] separated_path = notification.Split('.');
             switch(separated_path[0])
@@ -26,6 +28,9 @@ namespace GenericCard.src.amvcc
                     break;
                 case "combat":
                     combatController.Notify(notification, event_target, event_data);
+                    break;
+                case "system":
+                    systemController.Notify(notification, event_target, event_data);
                     break;
             }
         }

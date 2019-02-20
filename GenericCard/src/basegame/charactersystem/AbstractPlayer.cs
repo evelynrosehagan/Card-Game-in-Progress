@@ -13,6 +13,12 @@ namespace GenericCard.src.basegame.charactersystem
 
         AbstractDeck player_deck;
 
+        public AbstractPlayer()
+        {
+            health = 20;
+            healthmax = 20;
+        }
+
         #region Health Functions
         public void Heal(int health_gained)
         {

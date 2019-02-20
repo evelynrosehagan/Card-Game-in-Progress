@@ -8,7 +8,6 @@ namespace GenericCard.UI
 {
     abstract class UIScene : GameEntity
     {
-
         protected bool has_drawn = false;
         public abstract void Draw();
             

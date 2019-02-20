@@ -49,6 +49,7 @@
     <Compile Include="src\amvcc\controller\combat\CombatCardController.cs" />
     <Compile Include="src\amvcc\controller\combat\CombatViewController.cs" />
     <Compile Include="src\amvcc\controller\SceneController.cs" />
+    <Compile Include="src\amvcc\controller\SystemController.cs" />
     <Compile Include="src\amvcc\GameApplication.cs" />
     <Compile Include="src\amvcc\GameController.cs" />
     <Compile Include="src\amvcc\GameEntity.cs" />

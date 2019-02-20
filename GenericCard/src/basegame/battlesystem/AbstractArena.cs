@@ -14,9 +14,13 @@ namespace GenericCard.src.basegame.battlesystem
 
         public static ActionManager actionManager;
 
-        public AbstractArena()
+        public AbstractArena(AbstractPlayerCharacter PC, AbstractMonster enemy, AbstractEnvironment envi)
         {
             actionManager = new ActionManager();
+            PlayerCharacter = PC;
+            Enemy = enemy;
+            Environment = envi;
+
         }
     }
 }

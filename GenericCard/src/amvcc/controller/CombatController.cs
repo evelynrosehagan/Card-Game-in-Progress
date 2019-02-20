@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using GenericCard.src.amvcc.controller.combat;
 namespace GenericCard.src.amvcc.controller
 {
-    class CombatController
+    class CombatController : GameEntity
     {
         CombatCardController card_combat_controller;
         ArenaController arena_controller;
@@ -15,8 +15,9 @@ namespace GenericCard.src.amvcc.controller
         {
             card_combat_controller = new CombatCardController();
             arena_controller = new ArenaController();
+            combat_view_controller = new CombatViewController();
         }
-        public void Notify(string notification, Object event_target, params object[] event_data)
+        public override void Notify(string notification, Object event_target, params object[] event_data)
         {
             string[] separated_path = notification.Split('.');
             switch(separated_path[1])

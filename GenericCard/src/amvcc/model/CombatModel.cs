@@ -15,12 +15,17 @@ namespace GenericCard.src.amvcc.model
             MonsterCharacter = monster;
             EnvironmentCharacter = environment;
 
-            Arena = new DEBUG_Arena();
+            Arena = new DEBUG_Arena(PC, monster, environment);
         }
         AbstractPlayerCharacter PlayerCharacter;
         AbstractMonster MonsterCharacter;
         AbstractEnvironment EnvironmentCharacter;
 
         public AbstractArena Arena;
+
+        public override void Notify(string notification, object event_target, params object[] event_data)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
